@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,500,700|Lobster&display=swap');
+
+
+p {
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    font-size: large;
+}
