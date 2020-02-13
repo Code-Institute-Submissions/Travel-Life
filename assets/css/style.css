@@ -7,27 +7,28 @@
 
 html,
 body {
-    padding-top: 50px;
+    
+}
+.main{
     background: url("../images/mountain.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 400px;
+    height: 600px;
+    width: 100%;
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  
+    padding-bottom: 250px;
 }
-
 
 p {
 
     font-family: "Lobster", cursive;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 45px;
+    font-size: 40px;
     color: #f4f4f4;
 }
 
@@ -45,7 +46,28 @@ a:hover {
 }
 
 #map {
-    min-height: 100%;
-    width: 200px;
-    background-color: red;
+    height: 360px;
+    width: 100%;
+    /* visibility: hidden;*/
+    margin-top: 50px;
+   margin-bottom: 35px;
+   border-radius: 25px;
+   
+}
+.mid-section{
+    background-color: #00ffff;
+}
+.centered-pic{
+  margin-left: 55px;
+  margin-bottom: 60px;
+  border-bottom-right-radius: 30%;
+  border: inset;
+}
+@media (min-width: 768px){
+  #map {
+     margin-left: 250px;
+  }  
+  .main{
+      height: 650px;
+  }
 }
