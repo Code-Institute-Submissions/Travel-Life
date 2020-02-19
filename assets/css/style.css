@@ -5,8 +5,9 @@
 }
 
 
-html,
-body {}
+h4 {
+    padding-top: 10px;
+}
 
 .main {
     background: url("../images/mountain.jpg");
@@ -18,7 +19,7 @@ body {}
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
-
+    padding-right: 150px;
     padding-bottom: 250px;
 }
 
@@ -63,23 +64,26 @@ p {
 }
 
 .centered-pic {
-    margin-left: 55px;
-    margin-bottom: 60px;
+    margin: 30px 25px;
     border-bottom-right-radius: 30%;
-    border: inset;
+    padding: 5px;
 }
 
 @media (min-width: 768px) {
     #map {
-        margin-left: 250px;
+        margin-left: 150px;
     }
     .main {
         height: 730px;
     }
     .mid-toggle {
-        position: relative;
-        top: 10px;
-        left: 520px;
+        padding-left: 150px;
+        width: 100%;
+
+    }
+    .centered-pic {
+        margin: 10px;
+        width: 60%;
     }
 }
 
@@ -96,18 +100,18 @@ p {
 }
 
 .mid-toggle {
-    height: 100px;
-    margin: 2px auto;
-    width: 100px;
-   padding: 2px;
+    height: 50px;
+    margin: 15px 5px;
+    width: 100%;
     font-size: 18px;
-    color: #708090;
+    color: #f4f4f4;
     transition: all 1s ease-in-out;
+    padding-right: 20px;
 }
 
 .mid-toggle:hover {
     text-decoration: none;
     color: black;
-    border: 1px solid black;
-    border-radius: 10px;
+    background-color: #f4f4f4;
+    font-size: 20px;
 }
