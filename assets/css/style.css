@@ -31,6 +31,14 @@ p {
     font-size: 40px;
     color: #f4f4f4;
 }
+.img-text{
+    color: #708090;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.bg-color{
+  background-color: #87cefa;  
+}
 
 .firm {
     font-family: "Heebo", sans-serif;
@@ -55,18 +63,17 @@ p {
 
 }
 
-.toggle {
-    visibility: hidden;
-}
+
 
 .mid-section {
-    background-color: #00ffff;
+    background-color: rgb(240, 236, 228);
 }
 
 .centered-pic {
     margin: 30px 25px;
     border-bottom-right-radius: 30%;
-    padding: 5px;
+    padding-left: 5px;
+    border: inset;
 }
 
 @media (min-width: 768px) {
@@ -76,10 +83,9 @@ p {
     .main {
         height: 730px;
     }
-    .mid-toggle {
-        padding-left: 150px;
+    .intro-title {
         width: 100%;
-
+        padding-left: 300px;
     }
     .centered-pic {
         margin: 10px;
@@ -99,19 +105,20 @@ p {
     padding: 10px;
 }
 
-.mid-toggle {
-    height: 50px;
-    margin: 15px 5px;
-    width: 100%;
+.intro-title {
+    padding:30px 25px;
     font-size: 18px;
-    color: #f4f4f4;
+    color: #708090;
     transition: all 1s ease-in-out;
-    padding-right: 20px;
 }
 
-.mid-toggle:hover {
+.intro-title:hover {
     text-decoration: none;
     color: black;
-    background-color: #f4f4f4;
+    font-size: 20px;
+}
+.btn-primary{
+    background-color: #708090;
+    color: #f4f4f4;
     font-size: 20px;
 }
