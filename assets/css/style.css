@@ -1,16 +1,49 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,500,700|Lobster&display=swap');
 
+
+/*======================================texts,anchors,headings.buttons*/
+
 .capitalize {
     text-transform: capitalize;
 }
 
+p {
+
+    font-family: "Lobster", cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 40px;
+    color: #f4f4f4;
+}
 
 h4 {
     padding-top: 10px;
 }
-.badge{
-    font-size: 15px;
+
+a:hover {
+    color: #007bff;
 }
+
+.firm {
+    font-family: "Heebo", sans-serif;
+    color: #f4f4f4;
+    background-color: #708090;
+}
+
+.firm:hover {
+    text-decoration: none;
+    background-color: #f4f4f4;
+    color: #708090;
+}
+
+.btn-primary {
+    background-color: #708090;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
+
+/*=================================================photos*/
 
 .main {
     background: url("../images/mountain.jpg");
@@ -26,56 +59,6 @@ h4 {
     padding-bottom: 250px;
 }
 
-p {
-
-    font-family: "Lobster", cursive;
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 40px;
-    color: #f4f4f4;
-}
-
-.img-text {
-    color: #708090;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-.bg-color {
-    background-color: #ffd700;
-
-}
-
-.firm {
-    font-family: "Heebo", sans-serif;
-    color: #f4f4f4;
-    background-color: #708090;
-}
-
-.firm:hover {
-    text-decoration: none;
-    background-color: #f4f4f4;
-    color: #708090;
-}
-
-#map {
-    height: 360px;
-    width: 100%;
-
-    margin-top: 50px;
-    margin-bottom: 35px;
-    border-radius: 25px;
-
-}
-
-a:hover {
-    color: #007bff;
-}
-
-.mid-section {
-    background-color: rgb(240, 236, 228);
-}
-
 .centered-pic {
     margin: 30px 25px;
     border-bottom-right-radius: 30%;
@@ -83,34 +66,7 @@ a:hover {
     border: inset;
 }
 
-@media (min-width: 768px) {
-    #map {
-        margin-left: 150px;
-    }
-    .main {
-        height: 730px;
-    }
-    .intro-title {
-        width: 100%;
-        padding-left: 300px;
-    }
-    .centered-pic {
-        margin: 10px;
-        width: 60%;
-    }
-}
-
-.footer {
-    font-size: small;
-    background-color: #8fbc8f;
-    height: 80px;
-}
-
-.footer-title {
-    margin: 0px auto;
-    width: 50px;
-    padding: 10px;
-}
+/*==============================================main body*/
 
 .intro-title {
     padding: 30px 25px;
@@ -125,8 +81,79 @@ a:hover {
     font-size: 20px;
 }
 
-.btn-primary {
-    background-color: #708090;
-    color: #f4f4f4;
+.img-text {
+    color: #708090;
     font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.bg-color {
+    background-color: #ffd700;
+
+}
+
+#map {
+    height: 360px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    border-radius: 25px;
+
+}
+
+
+.mid-section {
+    background-color: rgb(240, 236, 228);
+}
+
+
+/*==============================================media queries*/
+
+@media (min-width: 768px) {
+    #map {
+        margin-left: 130px;
+    }
+    .main {
+        height: 730px;
+    }
+    .intro-title {
+        width: 100%;
+        padding-left: 300px;
+    }
+    .centered-pic {
+        margin: 10px;
+        width: 60%;
+    }
+
+}
+
+@media (min-width: 982px) {
+    #map {
+        margin-left: 220px;
+    }
+}
+
+/*====================================================footer*/
+
+.footer {
+    font-size: small;
+    background-color: #8fbc8f;
+    height: 100%;
+}
+
+.footer-title {
+    margin: 0px auto;
+    width: 50px;
+    padding: 10px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

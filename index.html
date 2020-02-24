@@ -5,11 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--------------------------------links to bootstrap cdn and font-awesome---------->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!------------------------------------------------------------link to the local css file--------->
+
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Travel Life</title>
+    <!---------------------------script links for email/enquiry service----->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_wqvJF3dkNfq2b0qqxPlHb");
+        })();
+    </script>
+
 </head>
+<!--------------------------------------------------------------opening text and website logo------>
 
 <body>
     <header class="container-fluid main" id="main">
@@ -17,12 +32,16 @@
             <div class="col-md-6">
                 <p class="capitalize">Ever wondered where life can take you.....?</p>
                 <p class="capitalize">experience the journey of a lifetime in:</p>
-                <h1><a class="firm" href="#trips"> Travel Life!<span class="badge badge-warning">click me!</span></a></h1>
+                <h1><a class="firm" href="#trips"> Travel Life!</a></h1>
             </div>
         </div>
     </header>
     <section class="container-fluid mid-section">
         <h3 class="intro-title  capitalize" id="trips">discover the miracles of south asia</h3>
+
+
+        <!------------------------------------------------------main body with images--------->
+
         <div class="row">
             <div class="col-md-4">
                 <img class="centered-pic" src="assets/images/tibet-city.jpg" alt="citadel" /><button class="btn-primary">Tibet</button>
@@ -43,24 +62,40 @@
                         target="_blank"> Mount Everest (8,848 m)</a>. Stand beneath their massive shadows and feel humbled. En route experience Sherpa hospitality and culture, Buddhist spiritualism (the trails are littered with mani stones, chortens and colorful
                     prayer flags) and amazing mountain scenery.</p>
             </div>
-
         </div>
+
+        <!----------------------------------------------------------------google map div------>
+
         <div class="row ">
             <div class="col-xs-12 col-sm-12 col-md-8 ">
                 <div id="map"></div>
             </div>
         </div>
     </section>
+    <!-----------------------------------------------------------------footer form--------->
 
-    <footer class="footer ">
-        <h4 class="footer-title capitalize ">copyright 2020</h4>
+    <footer class="footer">
+        <div class=" center-form">
+            <form onsubmit="return emailEnquiry(this);">
+                <input type="text" name="name" class="form-control" id="fullname" placeholder="Full-Name" required/>
+                <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email-Address" required/>
+                <button type="submit" class="btn btn-warning center-block">Enquire your spot today!</button>
+            </form>
+        </div>
     </footer>
+    <!-------------------------------------------------additional script links for bootstrap----->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!---------------------------------------javascript links to the local script folders(maps.js,script.js)------>
+
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/emailEnquiry.js"></script>
+    <!----------------------------------------------------------------javascript links to the google maps api & personal API key------>
+
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn95Bf__zieAmbPy1utzjbrNHpHsAhfL8&callback=initMap">
